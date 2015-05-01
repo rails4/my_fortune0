@@ -2,7 +2,8 @@
 
 <p id="notice"><%= notice %></p>
 
-<p><%= link_to "Export to CSV", fortunes_path(format: "csv"), class: "btn btn-default" %></p>
+<p><%= link_to "Export to CSV", fortunes_path(format: "csv"), class: "btn btn-default" %>
+   <%= link_to 'New Fortune', new_fortune_path, class: "btn btn-primary" %></p>
 
 <table class="table">
   <thead>
@@ -27,5 +28,3 @@
     <% end %>
   </tbody>
 </table>
-
-<p><%= link_to 'New Fortune', new_fortune_path, class: "btn btn-primary btn-lg" %></p>
