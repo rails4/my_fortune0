@@ -1,6 +1,8 @@
+<h1>Listing Fortunes</h1>
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Fortunes</h1>
+<p><%= link_to "Export to CSV", fortunes_path(format: "csv"), class: "btn btn-default" %></p>
 
 <table class="table">
   <thead>
@@ -25,4 +27,5 @@
     <% end %>
   </tbody>
 </table>
+
 <p><%= link_to 'New Fortune', new_fortune_path, class: "btn btn-primary btn-lg" %></p>
