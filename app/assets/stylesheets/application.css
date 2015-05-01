@@ -11,5 +11,13 @@
  * file per style scope.
  *
  *= require custom_bootstrap/custom_bootstrap
+ *= require rails_bootstrap_forms
  *= require_self
  */
+
+ body {
+   padding-top: 50px;
+ }
+ .starter-template {
+   padding: 40px 15px;
+ }

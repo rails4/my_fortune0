@@ -1,25 +1,7 @@
-<%= form_for(@fortune) do |f| %>
-  <% if @fortune.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@fortune.errors.count, "error") %> prohibited this fortune from being saved:</h2>
-
-      <ul>
-      <% @fortune.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :quotation %><br>
-    <%= f.text_area :quotation %>
-  </div>
-  <div class="field">
-    <%= f.label :source %><br>
-    <%= f.text_field :source %>
-  </div>
-  <div class="actions">
+<%= bootstrap_form_for(@fortune, layout: :horizontal) do |f| %>
+  <%= f.text_area :quotation %>
+  <%= f.text_field :source %>
+  <%= f.form_group do %>
     <%= f.submit %>
-  </div>
+  <% end %>
 <% end %>
