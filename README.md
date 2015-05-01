@@ -6,7 +6,7 @@ A sample Rails 4.2.1 + Ruby 2.2.1 application.
 1. Na gałęzi **mime_types** są przykłady z wykładu
    [Odpowiedzi zależne od nagłówka MIME](http://wbzyl.inf.ug.edu.pl/rails4/respond_to).
    - CSV response
-1. Na gałęzi **ruby_templates* jest więcej przykładów
+1. Na gałęzi **ruby_templates** jest więcej przykładów
    odpowiedzi zależnych od nagłówka MIME:
    - Ruby templates for CSV respose
    - Markdown templates
