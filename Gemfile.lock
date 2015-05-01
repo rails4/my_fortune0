@@ -121,6 +121,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+    redcarpet (3.2.3)
     ref (1.0.5)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
@@ -170,6 +171,7 @@ DEPENDENCIES
   less-rails-bootstrap (~> 3.3.4)
   quiet_assets (~> 1.1.0)
   rails (= 4.2.1)
+  redcarpet (= 3.2.3)
   sdoc (~> 0.4.0)
   spring
   sqlite3
