@@ -54,6 +54,7 @@ class FortunesController < ApplicationController
   # DELETE /fortunes/1
   # DELETE /fortunes/1.json
   def destroy
+    @fortune_path = Rails.application.routes.url_helpers.fortune_path(@fortune)
     @fortune.destroy
     respond_to do |format|
       format.html { redirect_to fortunes_url, notice: 'Fortune was successfully destroyed.' }
