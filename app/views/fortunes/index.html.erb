@@ -21,10 +21,13 @@
       <td><%= fortune.source %></td>
       <td><%= link_to 'Show', fortune, class: "btn btn-default btn-sm" %></td>
       <td><%= link_to 'Edit', edit_fortune_path(fortune), class: "btn btn-default btn-sm"  %></td>
-      <td><%= link_to 'Destroy', fortune, method: :delete, data: { confirm: 'Are you sure?' },
+      <td><%= link_to 'Destroy', fortune, method: :delete,
+              data: { confirm: 'Are you sure?', type: :json },
+              remote: true,
               class: "btn btn-danger btn-sm" %></td>
     </tr>
     <% end %>
   </tbody>
 </table>
+
 <p><%= link_to 'New Fortune', new_fortune_path, class: "btn btn-primary btn-lg" %></p>
