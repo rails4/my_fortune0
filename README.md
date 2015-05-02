@@ -32,4 +32,14 @@ Installation: add this to *application.js*:
 
 ### Remote JavaScript links
 
-TODO: branch remote_javascript
+Checkout the *remote_javascript* branch.
+
+### Modals
+
+Checkout the *modals* branch.
+
+Generate `modals\#index`:
+
+```console
+rails g controller modals index
+```
