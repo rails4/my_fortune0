@@ -1,6 +1,8 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Fortunes</h1>
+
+<% unless notice.nil? %>
+<div class="alert alert-info" role="alert"><%= notice %></div>
+<% end %>
 
 <table class="table">
   <thead>

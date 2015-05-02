@@ -22,6 +22,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+# jQuery UI for the Rails asset pipeline. Read more: https://github.com/joliss/jquery-ui-rails
+gem 'jquery-ui-rails', '~> 5.0.3'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
