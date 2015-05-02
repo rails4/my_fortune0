@@ -17,10 +17,10 @@
 //= require turbolinks
 //= require_tree .
 
-$(function() {
-  $('a[data-type=\"json\"]').on('ajax:success',
-     function(event, data, status, xhr) {
-       $(this).closest('tr').effect('explode', 1000);
-     }
-  );
-});
+// $(function() {
+//   $('a[data-type=\"json\"]').on('ajax:success',
+//      function(event, data, status, xhr) {
+//        $(this).closest('tr').effect('explode', 1000);
+//      }
+//   );
+// });
