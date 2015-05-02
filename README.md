@@ -32,4 +32,5 @@ Installation: add this to *application.js*:
 
 ### Remote JavaScript links
 
-TODO: branch remote_javascript
+Checkout the *remote_javascript* branch.
+
