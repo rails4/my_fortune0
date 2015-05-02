@@ -58,6 +58,7 @@ class FortunesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to fortunes_url, notice: 'Fortune was successfully destroyed.' }
       format.json { head :no_content }
+      format.js
     end
   end
 
