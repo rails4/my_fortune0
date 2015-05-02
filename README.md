@@ -41,5 +41,6 @@ Checkout the *modals* branch.
 Generate `modals\#index`:
 
 ```console
-rails g controller modals index
+rails g controller Modals index
+touch app/views/layouts/modals.html.erb
 ```

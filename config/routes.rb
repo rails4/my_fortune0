@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'modals/index'
+  get "modals", to: "modals#index"
 
   resources :fortunes
   # The priority is based upon order of creation: first created -> highest priority.
