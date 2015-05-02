@@ -11,7 +11,7 @@ A sample Rails 4.2.1 + Ruby 2.2.1 application.
    - Ruby templates for CSV respose
    - Markdown templates
 
-### Remote links
+### Remote JSON links
 
 Przykłady do wykładu
 [Remote links](http://wbzyl.inf.ug.edu.pl/rails4/remote-links).
@@ -29,3 +29,7 @@ Installation: add this to *application.js*:
 //= require jquery-ui
 //= require jquery_ujs
 ```
+
+### Remote JavaScript links
+
+TODO: branch remote_javascript
