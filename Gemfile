@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '~> 4.0.3'
+# gem 'jquery-rails', '~> 4.0.3'
 
 # jQuery UI for the Rails asset pipeline. Read more: https://github.com/joliss/jquery-ui-rails
 gem 'jquery-ui-rails', '~> 5.0.3'
