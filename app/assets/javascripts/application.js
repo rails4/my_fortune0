@@ -39,13 +39,13 @@ $(function() {
     });
   });
 
-  // remove the event listeners when the dialog is hidden
+  // remove the event listeners when the modal window is hidden
   $("#myModal").bind("hide.bs.modal", function() {
     console.log("remove event listeners on the buttons");
     $("#myModal button").unbind();
   });
 
-  // finally, wire up the actual modal functionality and show the dialog
+  // finally, wire up the actual modal functionality and show the modal window
   // see also http://getbootstrap.com/javascript/#modals
   // $("#myModal").modal({
   //   "backdrop" : "static",
