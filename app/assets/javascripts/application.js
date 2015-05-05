@@ -24,3 +24,32 @@
 //      }
 //   );
 // });
+
+$(function() {
+  console.log("wire up the buttons to dismiss the modal when shown");
+
+  $("#myModal").bind("show.bs.modal", function() {
+    console.log("#myModal was shown");
+    $("#myModal button").click(function(e) {
+      // do something whenever one of the buttons is clicked
+      // for demo purposes write to console the content of h4 element
+      console.log("h4 content: " + $(this).html());
+      // and hide the modal window
+      $("#myModal").modal('hide');
+    });
+  });
+
+  // remove the event listeners when the dialog is hidden
+  $("#myModal").bind("hide.bs.modal", function() {
+    console.log("remove event listeners on the buttons");
+    $("#myModal button").unbind();
+  });
+
+  // finally, wire up the actual modal functionality and show the dialog
+  // see also http://getbootstrap.com/javascript/#modals
+  // $("#myModal").modal({
+  //   "backdrop" : "static",
+  //   "keyboard" : true,
+  //   "show" : true // this parameter ensures the modal is shown immediately
+  // });
+});
