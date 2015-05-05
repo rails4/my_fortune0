@@ -1,2 +1,2 @@
 // alert("SUCCESS: usunięto fortunkę");
-$('a[href="<%= @fortune_path %>"]').closest('tr').effect('explode');
+$('a[href="<%= fortune_path(@fortune) %>"]').closest('tr').effect('explode');
