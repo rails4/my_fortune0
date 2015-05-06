@@ -18,11 +18,32 @@
 //= require turbolinks
 //= require_tree .
 
+// $(function() {
+//   console.log('find all show buttons #', $('a[class^=show]').length);
+//
+//   $('a[class^=show]').bind('ajax:success', function(event, data, status, xhr) {
+//     console.log('show button clicked');
+//     console.log(data);
+//   });
+// });
+
 $(function() {
-  $('a[class^=btn-default]').bind('ajax:success', function(event, data, status, xhr) {
-    console.log('show button clicked');
-    console.log(data);
+  $('a[class^=show]').bind('ajax:success', function(event, data, status, xhr) {
+    $('body').append(JST["templates/show"]({
+      modal: 'fortune-modal',  // jakiś unikalny identyfikator
+      id: data.id,
+      quotation: data.quotation,
+      source: data.source }));
+    $('#fortune-modal').on('hidden.bs.modal', function() {
+      $('.modal').remove();  // usuń wszystkie modals z DOM
+    });
+    $('#fortune-modal').modal('show');
+    // $('#fortune-modal').modal({backdrop: "static", keyboard: true, show: true});
   });
+
+  // $('a[class^=destroy]').bind('ajax:success', function(event, data, status, xhr) {
+  //   $(this).closest('article').effect('explode');
+  // });
 });
 
 // $(function() {

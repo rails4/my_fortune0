@@ -21,3 +21,7 @@
  .starter-template {
    padding: 40px 15px;
  }
+
+.modal-body .source {
+  font-style: italic;
+}
