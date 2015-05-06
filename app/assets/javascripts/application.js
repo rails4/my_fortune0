@@ -38,7 +38,6 @@ $(function() {
       $('.modal').remove();  // usuń wszystkie modals z DOM
     });
     $('#fortune-modal').modal('show');
-    // $('#fortune-modal').modal({backdrop: "static", keyboard: true, show: true});
   });
 
   // $('a[class^=destroy]').bind('ajax:success', function(event, data, status, xhr) {
