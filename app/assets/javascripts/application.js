@@ -18,15 +18,6 @@
 //= require turbolinks
 //= require_tree .
 
-// $(function() {
-//   console.log('find all show buttons #', $('a[class^=show]').length);
-//
-//   $('a[class^=show]').bind('ajax:success', function(event, data, status, xhr) {
-//     console.log('show button clicked');
-//     console.log(data);
-//   });
-// });
-
 $(function() {
   $('a[class^=show]').bind('ajax:success', function(event, data, status, xhr) {
     $('body').append(JST["templates/show"]({
@@ -44,6 +35,15 @@ $(function() {
   //   $(this).closest('article').effect('explode');
   // });
 });
+
+// $(function() {
+//   console.log('find all show buttons #', $('a[class^=show]').length);
+//
+//   $('a[class^=show]').bind('ajax:success', function(event, data, status, xhr) {
+//     console.log('show button clicked');
+//     console.log(data);
+//   });
+// });
 
 // $(function() {
 //   $('a[data-type=\"json\"]').on('ajax:success',

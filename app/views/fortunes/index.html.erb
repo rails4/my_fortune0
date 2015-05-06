@@ -23,8 +23,10 @@
                 remote: true,
                 data: { type: :json },
                 class: "show btn btn-default btn-sm" %></td>
-      <td><%= link_to 'Edit', edit_fortune_path(fortune), class: "btn btn-default btn-sm"  %></td>
-      <td><%= link_to 'Destroy', fortune, method: :delete,
+      <td><%= link_to 'Edit', edit_fortune_path(fortune),
+                class: "edit btn btn-default btn-sm"  %></td>
+      <td><%= link_to 'Destroy', fortune,
+                method: :delete,
                 remote: true,
                 class: "btn btn-danger btn-sm" %></td>
     </tr>
