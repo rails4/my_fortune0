@@ -13,6 +13,8 @@ gem 'less-rails', '~> 2.7.0'
 gem 'less-rails-bootstrap', '~> 3.3.4'
 gem 'bootstrap_form', '~> 2.3.0'
 
+gem 'ejs', '~> 1.1.1'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
