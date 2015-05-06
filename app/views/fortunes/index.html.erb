@@ -17,7 +17,7 @@
   <tbody>
     <% @fortunes.each do |fortune| %>
     <tr>
-      <td><%= fortune.quotation %></td>
+      <td><%= fortune.quotation[0..64] %>…</td>
       <td><%= fortune.source %></td>
       <td><%= link_to 'Show', fortune,
                 remote: true,
