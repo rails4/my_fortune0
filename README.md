@@ -30,17 +30,26 @@ Installation: add this to *application.js*:
 //= require jquery_ujs
 ```
 
-### Remote JavaScript links
-
-Checkout the *remote_javascript* branch.
-
-### Modals
-
-Checkout the *modals* branch.
-
-Generate `modals\#index`:
+### Remote JavaScript
 
 ```console
-rails g controller Modals index
-touch app/views/layouts/modals.html.erb
+git checkout --track origin/remote_javascript
+```
+
+### Ruby Templates
+
+```console
+git checkout --track origin/remote_javascript
+```
+
+### Modal Windows
+
+```console
+git checkout --track origin/modals
+```
+
+### HTML element template
+
+```console
+git checkout --track origin/html_templates
 ```
