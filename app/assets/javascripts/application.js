@@ -28,7 +28,6 @@ $(function() {
 
     // get document fragment
     var clone = template.content.cloneNode(true);
-    clone.querySelector('article').id = 'fortune-modal';
 
     // populate document fragment at runtime
     var p = clone.querySelectorAll('p');
@@ -37,11 +36,15 @@ $(function() {
     var h3 = clone.querySelector('h3');
     h3.textContent = 'Fortune ' + data.id;
 
+    var modal_id = 'fortune-modal';
+
+    clone.querySelector('article').id = modal_id;
+
     // activate the template
     $('body').prepend(clone);
 
     // remove modal window from DOM
-    $('#fortune-modal').on('hidden.bs.modal', function() {
+    $('#' + modal_id).on('hidden.bs.modal', function() {
       $('.modal').remove();
     });
 
