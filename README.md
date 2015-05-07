@@ -30,6 +30,26 @@ Installation: add this to *application.js*:
 //= require jquery_ujs
 ```
 
-### Remote JavaScript links
+### Remote JavaScript
 
-TODO: branch remote_javascript
+```console
+git checkout --track origin/remote_javascript
+```
+
+### Ruby Templates
+
+```console
+git checkout --track origin/remote_javascript
+```
+
+### Modal Windows
+
+```console
+git checkout --track origin/modals
+```
+
+### HTML element template
+
+```console
+git checkout --track origin/html_templates
+```
