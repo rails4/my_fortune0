@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @fortune %> |
-<%= link_to 'Back', fortunes_path %>
+<p>
+  <%= link_to 'Show', @fortune, class: "btn btn-primary" %>
+  <%= link_to 'Back', fortunes_path, class: "btn btn-primary" %>
+</p>

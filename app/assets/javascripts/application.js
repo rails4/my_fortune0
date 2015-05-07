@@ -20,8 +20,9 @@
 
 $(function() {
   console.log('try to attach ajax:success event to Show link');
-
-  $('a[class^=show]').bind('ajax:success', function(event, data, status, xhr) {
+  // use delegated event
+  $(document).on('ajax:success', 'a[class^=show]',
+        function(event, data, status, xhr) {
     console.log('event ajax:success was fired');
 
     var template = document.querySelector('#modal-show');

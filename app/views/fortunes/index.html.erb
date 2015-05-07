@@ -24,6 +24,8 @@
 <div class="alert alert-info" role="alert"><%= notice %></div>
 <% end %>
 
+<p><%= link_to 'New Fortune', new_fortune_path, class: "btn btn-primary" %></p>
+
 <table class="table">
   <thead>
     <tr>
@@ -53,5 +55,3 @@
     <% end %>
   </tbody>
 </table>
-
-<p><%= link_to 'New Fortune', new_fortune_path, class: "btn btn-primary btn-lg" %></p>
