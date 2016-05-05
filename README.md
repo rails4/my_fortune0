@@ -53,3 +53,12 @@ git checkout --track origin/modals
 ```console
 git checkout --track origin/html_templates
 ```
+
+## Update to Rails 5
+
+```
+git checkout -b rails5
+# update code to rails5
+# add, commit
+git push -u origin rails5
+```
